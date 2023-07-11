@@ -125,7 +125,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "URL: {{appsmith.store.url}}",
+              "text": "Endpoint: {{appsmith.store.url}}",
               "key": "hp8fuarwwh",
               "isDeprecated": false,
               "rightColumn": 32,
