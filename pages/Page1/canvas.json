@@ -27,59 +27,147 @@
           "leftColumn": 0,
           "children": [
             {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "mobileBottomRow": 26,
-              "widgetName": "Button1",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
+              "mobileBottomRow": 15,
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
               "searchTags": [
-                "click",
-                "submit"
+                "typography",
+                "paragraph",
+                "label"
               ],
-              "topRow": 22,
-              "bottomRow": 26,
+              "topRow": 10,
+              "bottomRow": 14,
               "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
+              "type": "TEXT_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 32,
+              "mobileRightColumn": 22,
               "animateLoading": true,
-              "parentColumnSpace": 11.40625,
-              "leftColumn": 16,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.078125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 6,
               "dynamicBindingPathList": [
                 {
-                  "key": "buttonColor"
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "text"
                 }
               ],
-              "text": "Submit",
-              "isDisabled": false,
-              "key": "ao07a2tjeb",
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Acme {{appsmith.store.env}}",
+              "key": "hp8fuarwwh",
               "isDeprecated": false,
-              "rightColumn": 32,
-              "isDefaultClickDisabled": true,
-              "widgetId": "4g9dqn6e3e",
-              "minWidth": 120,
+              "rightColumn": 15,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "i8g58jh1pj",
+              "minWidth": 450,
               "isVisible": true,
-              "recaptchaType": "V3",
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 22,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
+              "mobileTopRow": 11,
+              "responsiveBehavior": "fill",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "mobileLeftColumn": 16,
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
+              "mobileLeftColumn": 6,
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "mobileBottomRow": 20,
+              "widgetName": "Text2",
+              "displayName": "Text",
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 14,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 22,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.078125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 6,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Endpoint: {{appsmith.store.url}}",
+              "key": "hp8fuarwwh",
+              "isDeprecated": false,
+              "rightColumn": 18,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "w7btqpic83",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 16,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 16,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 6,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 21,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_JSObject1.myFun1",
+              "name": "JSObject1.myFun1",
+              "collectionId": "Page1_JSObject1",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  storeValue(\"env\", \"Production\");\n  storeValue(\"url\", \"prod.acme.com\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page1",
